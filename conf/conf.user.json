@@ -1,0 +1,38 @@
+/** For advanced users. */
+{
+  "defaultFontFamily": {
+    // String - Defaults to "Times New Roman".
+    "standard": null,
+    // String - Defaults to "Times New Roman".
+    "serif": "微软雅黑",
+    // String - Defaults to "Arial".
+    "sansSerif": "Monaco",
+    // String - Defaults to "Courier New".
+    "monospace": "Lucida Console",
+  },
+  //Boolean - Auto hide the menu bar unless the `Alt` key is pressed. Default is false.
+  "autoHideMenuBar": false,
+
+  // Array - Search Service user can access from context menu
+  // after a range of text is selected.
+  // Each item is formatted as [caption, url]
+  "searchService": [
+    // ["Search with Google", "https://google.com/search?q=%s"],
+    ["使用 Baidu 搜索", "https://www.baidu.com/s?ie=UTF-8&wd=%s"]
+  ],
+
+  // Custom key binding, which will override the default ones.
+  "keyBinding": {
+    // for example:
+    // "Always on Top": "Ctrl+Shift+P"
+    "Toggle Sidebar": "F1"
+  },
+
+  //default false. Only work for Windows
+  "monocolorEmoji": false,
+  // Deprecidated, Typora will do auto save automatically. default 3 minutes
+  "autoSaveTimer" : 3,
+  "maxFetchCountOnFileList": 500,
+  // default [], append Chrome launch flags, e.g: [["disable-gpu"], ["host-rules", "MAP * 127.0.0.1"]]
+  "flags": []
+}
