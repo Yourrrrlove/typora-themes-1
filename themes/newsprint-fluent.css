@@ -40,7 +40,7 @@
 :root {
     --control-text-color: #444;
     --rawblock-edit-panel-bd: #e5e5e5;
-    --monospace: 'Code New Roman', 'Lucida Console', 'Monaco', "微软雅黑";
+    --monospace: 'Fira Code', 'Code New Roman', 'Lucida Console', 'Monaco', 'Consolas', "微软雅黑";
 }
 
 ::-moz-selection {
@@ -276,7 +276,7 @@ code, tt {
     border-radius: 4px;
     padding: 2px 4px 0px 4px;
     font-size: 0.9em;
-    font-family: monospace;
+    font-family: var(--monospace);
 }
 
 code {
@@ -414,7 +414,7 @@ del {
 .md-content.md-url {
     color: #05685b!important;
     text-decoration: none!important;
-    font-family: 'Code New Roman';
+    font-family: var(--monospace);
 }
 
 a>span>code, a>code, a code {
@@ -439,7 +439,7 @@ a>span>code, a>code, a code {
     border-radius: 4px;
     padding: 12px;
     font-size: 1em;
-    font-family: 'Code New Roman', '微软雅黑';
+    font-family: var(--monospace);
 }
 
 #write pre.md-meta-block {

@@ -19,8 +19,8 @@
   --line-height: 1.4;
   --main-content-margin: 0 auto;
   --main-content-max-width: 100ch;
-  --monospace-font-size: 14px;
-  --monospace-font: 'source-code-pro', monospace;
+  --monospace-size: 14px;
+  --monospace: 'Fira Code', 'Code New Roman', 'Lucida Console', 'Monaco', 'Consolas', "微软雅黑";
   --monospace-line-height: 1.4;
   --nav-width: 200px;
   --vertical-padding: 40px;
@@ -374,8 +374,8 @@ p {
 /* basic styles */
 
 code {
-  font-family: var(--monospace-font);
-  font-size: var(--monospace-font-size);
+  font-family: var(--monospace);
+  font-size: var(--monospace-size);
   line-height: var(--monospace-line-height);
   background-color: var(--border-color);
   padding: 0 .125rem;
@@ -416,35 +416,6 @@ sup {
 
 }
 
-/**
- * Source Code Mode
- * see http:/*support.typora.io/Code-Block-Styles
- */
-#typora-source {
-	.cm-header {
-
-	}
-
-	.cm-strong {
-
-	}
-
-	.cm-em {
-
-	}
-
-	.cm-link {
-
-	}
-
-	.cm-string {
-
-	}
-
-	.cm-comment {
-
-	}
-}
 
 /**
  * Control UI (optional)
@@ -631,7 +602,7 @@ tt {
 
 /** source code mode */
 #typora-source {
-  font-family: "Code New Roman", "Monaco", "Lucida Console", "Fira Code", Consolas, "Courier", monospace, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--monospace);
 }
 
 #typora-source .CodeMirror {

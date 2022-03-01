@@ -1,6 +1,7 @@
 :root {
     --side-bar-bg-color: #fafafa;
     --control-text-color: #777;
+    --monospace: 'Fira Code', 'Code New Roman', 'Lucida Console', 'Monaco', 'Consolas', "微软雅黑";
 }
 
 @include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
@@ -497,7 +498,7 @@ tt {
 
 /** source code mode */
 #typora-source {
-  font-family: "Code New Roman", "Monaco", "Lucida Console", "Fira Code", Consolas, "Courier", monospace, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--monospace);
 }
 
 #typora-source .CodeMirror {

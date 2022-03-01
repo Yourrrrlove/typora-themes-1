@@ -45,6 +45,7 @@
 	--text-color: #1f0909;
 	--control-text-color: #444;
 	--rawblock-edit-panel-bd: #e5e5e5;
+	--monospace: 'Fira Code', 'Code New Roman', 'Monaco', 'Lucida Console', Consolas, Courier, monospace, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 ::-moz-selection {
@@ -707,7 +708,7 @@ tt {
 
 /** source code mode */
 #typora-source {
-  font-family: "Code New Roman", "Monaco", "Lucida Console", "Fira Code", Consolas, "Courier", monospace, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--monospace);
 }
 
 #typora-source .CodeMirror {
